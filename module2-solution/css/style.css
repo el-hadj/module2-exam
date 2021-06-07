@@ -1,59 +1,132 @@
 *{
           margin: 0;
           padding: 0;
+          box-sizing: border-box;
 }
 
 body{
-          align-items: center;
+          
           padding: 50px;
+          
 }
 
-h4{
+h2{
           align-content: center;
           text-align: center;
           padding: 20px;
+          width: 75%;
+          margin-left: 10%;
+          margin-bottom: 50px;
 
 }
 #box{
-          position: inline;
-          display: inline;
+          display: flex;
+          
 }
 
 p {
-     padding: 10px; 
-     position: relative;
-
-      
+     padding: 40px 10px 10px 10px; 
+     
 }
+
 #title{
+          float: right;
+          border: 3px solid black; 
+          padding: 5px 5px 5px 5px;
+          border-top: 0px; 
+          border-right: 0px;
+          text-align: center;
+          position: static;
+          width: 35%;
+}
+
+#chicken{
+          margin: 10px;
+          background-color: rgb(122, 122, 134);
           border: 3px solid black;
-          box-sizing: border-box;
-          width: 70px;
-          left: 0%;
-          margin-left: 456px;
-          padding: 10px 10px 10px 10px;
+          
 
+}
 
+#beef{
+          background-color: rgb(122, 122, 134);;
+          margin: 10px;
+          border: 3px solid black;
+          
+            
+}
 
+#sushi{
+          background-color: rgb(122, 122, 134);
+          margin: 10px;
+          border: 3px solid black;
+          
+          
 }
 
 .chicken{
-          margin: 10px;
-          background-color: blue;
-          border: 3px solid black;
-          width: 33%;
+          background-color:rgb(197, 130, 164);
 }
 
 .beef{
-          background-color: blueviolet;
-          margin: 10px;
-          border: 3px solid black;
-          width: 33%;
+     background-color: rgb(185, 41, 41);
+     color: white;
 }
 
 .sushi{
-          background-color: chartreuse;
-          margin: 10px;
-          border: 3px solid black;
-          width: 33%;
+          background-color: rgba(250, 185, 144, 0.932);
 }
+
+
+/** media queries**/
+
+ 
+@media (max-width : 767px) {
+     
+    .lg-chicken{
+          width: 33.33%;
+     }
+
+     .lg-beef{
+          width: 50%;
+     }
+
+     .lg-sushi{
+          width: 100%;
+     }
+}
+/*
+@media (min-width : 768px) and (max-width : 991px){
+     .md-chicken{
+
+          width: 25%;
+     }
+
+     .md.beef{
+          width: 25%;
+     }
+
+     .md-sushi{
+          width: 50%;
+          height: 100%;
+          
+     }
+}
+
+@media (max-width : 767px){
+     
+     #chicken{
+
+          width: 100%;
+     }
+
+     #beef{
+          width: 100%;
+     }
+
+     #sushi{
+          width: 100%;
+          
+          
+     }
+} */
