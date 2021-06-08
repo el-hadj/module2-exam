@@ -21,6 +21,7 @@ h2{
 }
 #box{
           display: flex;
+          position: relative;
           
 }
 
@@ -64,69 +65,44 @@ p {
           
 }
 
-.chicken{
+#box .chicken{
           background-color:rgb(197, 130, 164);
 }
 
-.beef{
+#box .beef{
      background-color: rgb(185, 41, 41);
      color: white;
 }
 
-.sushi{
+#box .sushi{
           background-color: rgba(250, 185, 144, 0.932);
 }
 
 
 /** media queries**/
 
- 
-@media (max-width : 767px) {
+ @media (max-width:767px){
+      #box {
+           display: block;
+      }
+
+ }
+@media (max-width: 991px) and (min-width: 768px){
+
+     #box #sushi{
+          position: absolute;
+          display:inline;
+          margin-top: 190px;
+          margin-bottom: 0px;
+          text-transform: inherit;
+     }
      
-    .lg-chicken{
-          width: 33.33%;
+     #box #chicken, #box #beef{
+          display: static;
      }
 
-     .lg-beef{
-          width: 50%;
-     }
-
-     .lg-sushi{
-          width: 100%;
-     }
-}
-/*
-@media (min-width : 768px) and (max-width : 991px){
-     .md-chicken{
-
-          width: 25%;
-     }
-
-     .md.beef{
-          width: 25%;
-     }
-
-     .md-sushi{
-          width: 50%;
-          height: 100%;
-          
-     }
 }
 
-@media (max-width : 767px){
-     
-     #chicken{
-
-          width: 100%;
-     }
-
-     #beef{
-          width: 100%;
-     }
-
-     #sushi{
-          width: 100%;
-          
-          
-     }
-} */
+@media (min-width:992px){
+     display: flex;
+}
