@@ -7,6 +7,8 @@
 body{
           
           padding: 50px;
+          font-family: cursive, sans-serif;
+          font-size: 15px;
           
 }
 
@@ -82,27 +84,43 @@ p {
 /** media queries**/
 
  @media (max-width:767px){
+     h2{
+          font-size: 50px;
+     }
+
       #box {
            display: block;
       }
 
  }
 @media (max-width: 991px) and (min-width: 768px){
+     h2{
+          font-size: 50px;
+     }
 
      #box #sushi{
           position: absolute;
           display:inline;
-          margin-top: 190px;
+          margin-top: 250px;
           margin-bottom: 0px;
-          text-transform: inherit;
+
      }
      
      #box #chicken, #box #beef{
           display: static;
      }
 
+
 }
 
 @media (min-width:992px){
-     display: flex;
+    #box{
+         display: flex;
+    }
+
+    h2{
+     font-size: 25px;
+}
+
+
 }
