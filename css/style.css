@@ -68,16 +68,16 @@ p {
 }
 
 #box .chicken{
-          background-color:rgb(197, 130, 164);
+          background-color:rgb(216,134,127);
 }
 
 #box .beef{
-     background-color: rgb(185, 41, 41);
+     background-color: rgb(185, 41, 41,0.89);
      color: white;
 }
 
 #box .sushi{
-          background-color: rgba(250, 185, 144, 0.932);
+          background-color: rgba(241,225,148,0.78);
 }
 
 
